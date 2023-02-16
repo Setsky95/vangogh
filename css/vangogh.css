@@ -1,0 +1,609 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    background-image: url("../imgs//fondo2.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+
+@media only screen and (min-width: 767px) {
+
+
+
+.row { /* PADRE HEADER */
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+.header {
+    background-color: rgb(17, 17, 17);
+        width: 100%;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+        top: 0;
+    left: 0;
+}
+    
+
+
+
+.nav__list { /* HIJO HEADER */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav_item {
+    list-style-type: none;
+    align-content: center;
+
+
+
+
+}
+.nav__link { /* HIJO NAVLIST */
+    display: flex;
+    color: antiquewhite;
+    text-decoration: none;
+    justify-content:space-evenly;
+    margin: 0 25px;
+    font-size: 20px;
+    font-family:  'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.portadacompleta {
+    height: 250px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    margin-bottom: 100px;
+    grid-template-areas:
+    "tituloweb1 tituloweb1 -  -" 
+    "tituloweb1 tituloweb1 -  boton_portada"
+    "sloganweb1 sloganweb1 - -"
+    "sloganweb1 sloganweb1 - -"
+
+}
+
+.imagenportada {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    object-fit: fill;
+}
+
+.fotoportada {
+    max-width: 100%;
+}
+
+.letrasportada {
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+
+
+}
+.tituloweb1 {
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif; 
+    color: rgb(255, 255, 255);
+    grid-area: "tituloweb1";
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.sloganweb1 {
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    font-style: italic;
+    grid-area: "sloganweb1";
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif; 
+    font-weight: 400;
+    font-size: 40px;
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+
+}
+
+
+
+
+.boton_portada {
+    display: grid;
+    justify-content: start;
+    margin: 20px 25px 20px 25px;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.btn-outline-light{
+    font-size: 10px;
+}
+
+
+
+.botonesBajos {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: reverse;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.Imagen_menu_bajo {
+    display:flex;
+    flex-wrap: reverse;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.Superior {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    size: 80%;
+    justify-content: center;
+}
+
+.inferior {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    size: 80%;
+    justify-content: center;
+}
+
+
+.botonWhatsapp {
+position: fixed;
+    width: 8%;
+    top: 85%;
+    right: 1%;
+}
+
+
+.IMAGENWHATSAPP {
+    width: 65%;
+}
+
+.videoinsti {
+    width: 80%;
+    height: 100%;
+  
+}
+
+.video{
+text-align: center;
+height: 650px;
+
+
+}
+    
+
+/* FOOTER */
+
+.container_footer {
+    padding:  12px 0 12px 0 ;
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    background-color: rgb(17, 17, 17);
+}
+
+.Footer_instagram {
+    padding-right: 10px;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif; 
+    font-size: 15px;
+
+}
+
+.texto_derechos {
+    padding-left: 10px;
+    display: flex;
+    color: aliceblue;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif; 
+    font-size: 15px;
+
+
+}
+
+}
+
+
+
+/* BURGERS */
+
+/* DISPLAY GALERIA COMIDA */
+
+.burgerrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.burgerrow2 {
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.burgertext { 
+    
+    margin-right: 100px;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 20px;
+    line-height: 80px;
+}
+
+.burgertext2 { 
+    text-align: right;
+    margin-right: 100px;
+    display: flex;
+    align-self: flex-start;
+    margin-top: 20px;
+    line-height: 80px;
+}
+
+.burger_name {
+    color: white;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 40px;
+  }
+
+
+.ingredientes {
+    list-style: none;
+    color: white;
+    font-variant: italic;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-weight: 250;
+    font-size: 25px;
+    line-height: 30px;
+
+
+}
+
+
+
+
+
+
+/* CONTACTO */
+
+.contacto_page {
+    margin-bottom: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.telefono {
+    margin-top: 20px;
+    padding-left: 10px;
+    text-align: left;
+    color: white;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.contactanos_titulo {
+    margin-top: 30px;
+    margin-bottom: 28px;
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: 400;
+}
+
+
+
+.mapa {
+    border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+
+/* CERVEZA */
+
+.descripcion_cerveza {
+    width: 250px;
+    font-size: 20px;
+    min-height: 30%;
+    color: white;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    line-height: 20px;
+    text-align: center;
+
+}
+
+.IBU {
+    margin-top: 10px;
+    list-style:none ;
+    color: white;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    line-height: 20px;
+    text-align: center;
+}
+
+.logocerveza {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_marca_cerveza {
+    display: flex;
+    height: 100px;
+    margin:  -25px 0 -15px 0 ;
+    text-align: center;
+
+    
+}
+
+.Cerveza_Name {
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 40px;
+  }
+
+  /* NOSOTROS */
+
+  .conteninernosotros {
+    display: flex;
+    margin-bottom: 200px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row-reverse;
+
+
+  }
+
+  .titulonosotros {
+    margin: 25px 0 50px 0;
+    text-align: center;
+    color: white;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-size: 50;
+    font-weight: 300;
+  }
+
+  .conteiner_foto_frente {
+    width: 287px;
+    height: 510;
+    display: flex;
+    margin: 0 10px 0 10px;
+
+
+  }
+  .foto_vangogh {   
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+
+  }
+
+  .texto_nosotros {
+    display: flex;
+    color: white;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-size: 20;
+    text-align: left;
+    width: 200px;
+
+  }
+
+  .conteinertextonosotros {
+    display: flex;
+    align-self: center;
+    margin: 0 1% 200px 1%;
+
+  }
+
+  /* BURGERS CON GRID*/
+
+  /* TITULO PÁGINA BURGER */
+.nuestrasburgers {
+    text-align: center;
+    margin: 50px auto 80px auto;
+
+}
+.NuestrosSanguches {
+    text-align: center;
+    margin: 10px auto 50px auto;
+}
+
+.nuestras {
+    color: white;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: 200;
+}
+.burgers {
+    color: white;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-weight: 800;
+}
+  /* BURGERS CON GRID FOTO DERECHA
+*/
+
+
+  .burgergrid{
+    margin: 0 15% 0 15%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+    "gridtitulo burgerfoto_grid"
+    "gridingredientes burgerfoto_grid"
+  }
+
+  
+.gridtitulo {
+    display: grid;
+    align-self: center;
+    grid-area: "gridtitulo";
+    
+ 
+}
+
+.gridingredientes {
+    display: grid;
+    justify-content: center;
+    grid-area: "gridingredientes";
+    
+
+}
+
+.burgerfoto_grid {
+    display: grid;
+    grid-area: "burgerfoto_grid";
+    justify-content: center;
+
+
+}
+
+.nombregurger {
+    display: grid;
+    text-align:center;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 70px
+}
+
+.foto_burger {
+    width: auto;
+    
+}
+
+.listaingredientes {
+    text-align: center;
+    width: 200px;
+    padding: 0;
+    list-style: none;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 2rem;
+
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+/* SEGUNDA FILA MARGEN OPUESTO */
+
+.burgergrid2 {
+    margin: 0 15% 0 15%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas:
+    "burgerfoto_grid2 gridtitulo2" 
+    "burgerfoto_grid2 gridingredientes2"
+  }
+
+  
+.gridtitulo2 {
+    padding: 0;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    grid-area: "gridtitulo2";
+    
+ 
+}
+
+.gridingredientes2 {
+    display: grid;
+    justify-content: center;
+    grid-area: "gridingredientes2";
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+
+
+}
+
+.burgerfoto_grid2 {
+    display: grid;
+    justify-self: center;
+    grid-area: "burgerfoto_grid2";
+
+}
+
+.nombregurger2 {
+    padding: 0;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 70px
+}
+
+
+
+.listaingredientes2 {
+    text-align: center;
+    list-style: none;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 2rem;
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+.foto_burger {
+    
+    border-radius: 7px;
+    width: 80%;
+  }
