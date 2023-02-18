@@ -459,13 +459,11 @@ height: 650px;
 .nuestras {
     color: white;
     font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
-    font-size: 5rem;
     font-weight: 200;
 }
 .burgers {
     color: white;
     font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
-    font-size: 5rem;
     font-weight: 800;
 }
 
@@ -474,6 +472,53 @@ height: 650px;
     font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
 }
 
+.fondo_auto {
+    background-image: url("../imgs//fondo_tarjeta_autoretato.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; }
+
+.fondo_vangogh {
+    background-image: url("../imgs//fondo_tarjeta_vangogh.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+
+.fondo_girasoles{
+    background-image: url("../imgs//fondo_tarjeta_girasoles.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.fondo_raices {
+    background-image: url("../imgs//fondo_tarjeta_raices.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.fondo_terraza {
+    background-image: url("../imgs//fondo_tarjeta_terraza.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.fondo_cuervos {
+    background-image: url("../imgs//fondo_tarjeta_cuervos.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.fondo_viñedo {
+    background-image: url("../imgs//fondo_tarjeta_viñedo.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.fondo_vincent{
+    background-image: url("../imgs//fondo_tarjeta_vincent.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
 
   /* BURGERS CON GRID FOTO DERECHA
 */
