@@ -16,35 +16,38 @@
 </head>
 <body>
   <header>
-    <div class="header">
-        <nav class="nav">
-         <ul class="nav__list">
-          <li class="nav_item"> 
-            <a class="nav__link" href= "../Index.html">INICIO</a>
-        </li>
-        <li class="nav_item">
-          <a class="nav__link" href= "burgers_grid.html">BURGERS</a>
-        </li>
-        <li class="nav_item">
-             <a class="nav__link" href= "./birras.html">CERVEZAS</a>
-        </li>
-        <li class="nav_item"> 
-            <a class="nav__link" href= "./Nosotros.html">NOSOTROS</a>
-        </li>
-        <li class="nav_item"> 
-            <a class="nav__link" href= "./Contacto.html">CONTACTO</a>
-        </li>
-                   
-         </ul>
-            </nav>
+    <nav class="navbar fixed-top  navbar-expand-lg navbar-expand-md bg-dark p-0 ">
+      <div class="container-fluid  ">
+      
+        <button class="navbar-toggler custom-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="collapse navbar-collapse  justify-content-center align-items-center" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item ">
+              <a class="nav-link texto-web" aria-current="page" href="#"><h4>INICIO</h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-web" href="#"><h4>BURGERS</h4></a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link texto-web" href="#"><h4>CONTACTO</h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link texto-web" href="#"><h4>NOSOTROS</h4></a>
+              
+            </li>
+          </ul>
         </div>
       </div>
+    </nav>
+      </div>
 </header>
-<div class="conteiner.fluid">
-<div class="row row-cols-1 px-3 m-3 0 3 0 text-center">
-<h1 class=" display-1 nuestras"> NUESTRAS <span class=" burgers" > BURGERS</span> </h1>
+<div class="conteiner.fluid"> <!-- contenedor principal -->
+<div class="row row-cols-1  mt-5  text-center"> <!-- titulo burger -->
+<h1 class=" display-1 m-0 nuestras "> NUESTRAS <span class="  burgers " > BURGERS</span> </h1>
 </div>
-<div class=" row row-cols-1 px-4 row-cols-md-2 g-4 row-cols-xl-4 row-cols-xxl-4 row-cols-lg-4 ">
+<div class=" row row-cols-1 px-4 row-cols-md-2 m-0 g-4 row-cols-xl-4 row-cols-xxl-4 row-cols-lg-4  ">
   <div class="col  "> <!-- burger 1 -->
     <div class="card fondo_auto border border-dark">
       <img src="../imgs/autotriplechica.jpg" class="card-img-top" alt="autotriple">
@@ -73,7 +76,7 @@
       <img src="../imgs/Vangoghchica.jpg" class="card-img-top" alt="Vangogh">
       <div class="card-body">
         <h5 class="card-title text-center texto-web">VANGOGH</h5>
-        <p class="card-text text-center texto-web"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+        <p class="card-text text-center texto-web "> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
           <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
         </svg>Pan clásico
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
@@ -306,14 +309,12 @@
         
             </div>
   </div>
-</div>
-<div class="conteiner.fluid">
+
   <div class="row row-cols-1  mt-5 mb-5 text-center">
   <h1 class=" display-1 nuestras"> NUESTROS <span class=" burgers" > SANGUCHES</span> </h1>
   </div>
-</div>
-<div class=" row row-cols-1 px-4 row-cols-md-2 g-4 row-cols-xl-4 row-cols-xxl-4 row-cols-lg-4 justify-content-center ">
-<div class="col  "> <!-- sangu 1 -->
+<div class=" row row-cols-1 px-4 row-cols-md-2 m-0 g-4 row-cols-xl-4 row-cols-xxl-4 row-cols-lg-4 justify-content-center">
+<div class="col"> <!-- sangu 1 -->
   <div class="card fondo_auto border border-dark">
     <img src="../imgs/sangu_de_pollo.jpg" class="card-img-top" alt="Sangudepollo">
     <div class="card-body ">
@@ -329,7 +330,7 @@
       </svg>Cheddar</p>
    
 
-  <div class="container text-center d-flex align-items-center pb-3 justify-content-center">
+  <div class="container text-center d-flex align-items-center pb-3 justify-content-center  lg pb-5">
       <input class="form-check-input me-1 mt-4" type="checkbox" value="SUMAR AL PEDIDO" id="firstCheckbox">
       <label class="form-check-label mt-4 texto-web " for="firstCheckbox">AGREGAR AL PEDIDO</label>
   </div>
@@ -364,17 +365,67 @@
 </div>
 </div>
 
+  <div class="row row-cols-1  mt-5 mb-5 text-center">
+  <h1 class=" display-1 nuestras"> NUESTRAS <span class=" burgers" > PAPAS</span> </h1> 
+  </div>
+</div>
+<div class=" row row-cols-1 px-4 row-cols-md-2 m-0 g-4 row-cols-xl-4 row-cols-xxl-4 row-cols-lg-4 justify-content-center ">
+<div class="col  "> <!-- papas  1 -->
+  <div class="card fondo_auto border border-dark">
+    <img src="../imgs/papas_vangogh.jpg" class="card-img-top" alt="Papasvg">
+    <div class="card-body ">
+      <h5 class="card-title text-center texto-web">PAPAS VANGOGH</h5>
+      <p class="card-text text-center texto-web"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+      </svg>Papas
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+      </svg>Crema
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+      </svg>Cebolla de verdeo
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+      </svg>Bacon</p>
+      
+   
+
+  <div class="container text-center d-flex align-items-center pb-3 justify-content-center">
+      <input class="form-check-input me-1 mt-4" type="checkbox" value="SUMAR AL PEDIDO" id="firstCheckbox">
+      <label class="form-check-label mt-4 texto-web " for="firstCheckbox">AGREGAR AL PEDIDO</label>
+  </div>
+</div>
+  </div>
+</div>
+<div class="col"> <!-- papas  2 -->
+  <div class="card fondo_girasoles border border border-dark ">
+    <img src="../imgs/papas_cheddar.jpg" class="card-img-top" alt="Papascheddar">
+    <div class="card-body">
+      <h5 class="card-title text-center texto-web">PAPAS CHEDDAR</h5>
+      <p class="card-text text-center texto-web"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+      </svg>Papas
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+      </svg>Bacon
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+        <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+      </svg>Cheddar </p>
+   
+
+  <div class="container text-center d-flex align-items-center justify-content-center pb-3">
+      <input class="form-check-input me-1 mt-4" type="checkbox" value="SUMAR AL PEDIDO" id="firstCheckbox">
+      <label class="form-check-label mt-4 texto-web" for="firstCheckbox">AGREGAR AL PEDIDO</label>
+  </div>
+</div>
+  </div>
+</div>
+</div>
+</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
- <footer>
-                                
-                                <div class="container_footer">
-                                    <h4> <a class="Footer_instagram " href ="https://www.instagram.com/vangogh.foodandbeer/">SEGUINOS EN INSTAGRAM @VANGOGHFOODANDBEER </a></h4> 
-                                     <p class="texto_derechos">2023 TODOS LOS DERECHOS RESERVADOS - VANGOGH BY SETSKY</p>
-                                </div>
-                                
-                            </footer>
+
                         </html>
                         
