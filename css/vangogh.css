@@ -8,11 +8,17 @@ box-sizing: border-box;
 .custom-toggler {
     display: flex;
     border-color: aliceblue;
-    background-color: aliceblue;
-    width: 3rem;
-    height: 2rem;
+    background-color: rgb(255, 255, 255);
+    width: 2.5rem;
+    height: 1.5rem;
    align-items: center;
    justify-content: center;
+   margin-right: 1rem;
+}
+
+.texto-titulo-nav {
+    font-size: 1.5rem;
+    padding-left: 0.7rem;
 }
 
 .nav-item {
