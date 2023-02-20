@@ -32,6 +32,31 @@ body {
 }
 
 
+.texto-web-titulo {
+    color: rgb(248, 244, 244);
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+  
+}
+
+.fondo_portada {
+    background-image: url("../imgs//portada_indezx.png");
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+.texto-web-boton {
+    color: rgb(248, 244, 244);
+    font-family: 'Oswald', sans-serif, Georgia, 'Times New Roman', Times, serif;
+}
+
+.contenedor-boton-portada {
+    width: 10rem;
+    justify-content: center;
+}
+
 /* FOOTER */
 .texto-web-footer {
     color: rgb(248, 244, 244);
