@@ -31,6 +31,10 @@ body {
     background-size: cover; 
 }
 
+a {
+    text-decoration: none;
+  }
+
 /* Portada Index */
 
 
